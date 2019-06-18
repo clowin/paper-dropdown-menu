@@ -384,7 +384,7 @@ respectively.
          */
         _selectedItemChanged: function(selectedItems) {
           var value = '';
-          if (selectedItems.length) {
+          if (selectedItems && selectedItems.length) {
             value = selectedItems.map((item) => {
               return item && (item.label || item.getAttribute('label') || item.textContent.trim());
             }).join(', ');
